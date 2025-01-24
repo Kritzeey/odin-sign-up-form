@@ -9,12 +9,46 @@
     <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
-    <div class="image">
+    <form method="post" class="container">
+        <img src="./images/person.svg" id="image">
+        <div class="content">
+            <div id="title">
+                Sign Up!
+            </div>
 
-    </div>
-    
-    <form class="container" method="post">
+            <div class="inputs">
+                <div class="left-side">
+                    <div class="username">
+                        <label for="username-input">Username*</label>
+                        <input type="text" maxlength="20" id="username-input" placeholder="JohnDoe">
+                    </div>
 
+                    <div class="password">
+                        <label for="password-input">Password*</label>
+                        <input type="password" minlength="8" id="password-input" placeholder="johndoe123">
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="email">
+                        <label for="email-input">Email*</label>
+                        <input type="email" id="email-input" placeholder="johndoe@email.com">
+                    </div>
+
+                    <div class="confirm-password">
+                        <label for="confirm-password-input">Confirm Password*</label>
+                        <input type="password" minlength="8" id="confirm-password-input" placeholder="johndoe123">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons"><button type="submit" id="submit">Submit</button></div>
+        </div>
     </form>
+
+    <div id="credits">
+        Background image by <a href="https://unsplash.com/@magicpattern?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">MagicPattern</a> on <a href="https://unsplash.com/photos/blue-and-white-checkered-textile-saRKnTHBEhU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <br>
+        Illustration image by <a href="https://storyset.com/online">Storyset</a>
+    </div>
 </body>
 </html>
