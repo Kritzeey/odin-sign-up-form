@@ -1,13 +1,30 @@
-:root {
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(fonts/Poppins-Regular.ttf);
 }
 
 body {
-    padding: 0;
-    margin: 0;
     display: flex;
+}
+
+.image {
     background-image: url(./images/background.jpg);
     background-size: cover;
     height: 100vh;
+    width: calc(100vw / 2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: calc(100vw / 2);
+    height: 100vh;
+    background: rgba(215, 197, 182, 0.75);
 }
